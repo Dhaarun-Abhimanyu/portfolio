@@ -89,30 +89,27 @@ hobbyCards.forEach(card => {
 const contactForm = document.querySelector('.contact-form');
 
 contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
     const formData = new FormData(contactForm);
     const name = formData.get('name');
     const email = formData.get('email');
     const subject = formData.get('subject');
     const message = formData.get('message');
-    
-    // Simple form validation
+
     if (!name || !email || !subject || !message) {
+        e.preventDefault(); // prevent only if invalid
         showNotification('Please fill in all fields', 'error');
         return;
     }
-    
+
     if (!isValidEmail(email)) {
+        e.preventDefault(); // prevent only if invalid
         showNotification('Please enter a valid email address', 'error');
         return;
     }
-    
-    // Simulate form submission
-    showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-    contactForm.reset();
+
+    // Allow submission if valid
 });
+
 
 // Email validation function
 function isValidEmail(email) {
