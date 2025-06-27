@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaarun Abhimanyu S - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Dhaarun Abhimanyu S</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm Dhaarun Abhimanyu S
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & Creative Problem Solver</p>
+                <p class="hero-description">
+                    A highly motivated software engineer with a strong passion for back-end development and a new found interest in low-level programming.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card" title="That's the neat part, code never releases the lock">
+                    <div class="card-content">
+                        <div class="code-snippet">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span> <span class="code-variable">Dhaarun</span><span class="code-operator">=</span><span class="code-bracket">() =&gt; &#123;</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">&nbsp;&nbsp;&nbsp;&nbsp;while</span><span class="code-bracket">(true) &#123;</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-variable">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</span><span class="code-operator">.</span><span class="code-method">wait</span><span class="code-bracket">()</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-variable">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sleep</span><span class="code-operator">.</span><span class="code-method">wait</span><span class="code-bracket">()</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-bracket">&nbsp;&nbsp;&nbsp;&nbsp;&#125;</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-bracket">&#125;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate full-stack developer - primarily focused in backend
+                        With a background in computer science and a keen eye for backend development, I thrive on solving complex problems and building efficient, scalable applications.
+                        I bring both technical expertise and creative vision to every project.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, diving into my favorite hobbies,
+                        or probably watching a hour long video on youtube about why Silksong will release within 2025(Its a game)
+                    </p>
+                    <div class="skills">
+                        <h3>Technologies I Love</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JavaScript: Nodejs - Express & React</span>
+                            <span class="skill-tag">Java(my go-to leetcode language)</span>
+                            <span class="skill-tag">Mongodb: Compass & Atlas</span>
+                            <span class="skill-tag">SQL: PostgreSQL</span>
+                            <span class="skill-tag">Others: Github, Vscode, Neovim, Postman, Docker, Nginx,...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hobbies-section">
+                    <h3>My Hobbies</h3>
+                    <div class="hobbies-grid">
+                        <div class="hobby-card" data-hobby="gaming">
+                            <div class="hobby-icon">🎮</div>
+                            <h4>Gaming</h4>
+                            <div class="hobby-details">
+                                <p>I love looter shooter games and fast paced combat(Warframe, devil may cry 5, etc).
+                                    Have also played a lot of indie games like Hollow Knight, Celeste, etc.
+                                    And yes, I play Osu!(its a rhythm game, not a shooter)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hobby-card" data-hobby="photography">
+                            <div class="hobby-icon">✏️</div>
+                            <h4>Drawing</h4>
+                            <div class="hobby-details">
+                                <p>I (used to) draw a lot of fictional characters from movies, series, efficient
+                                    and games. I also love to draw my own characters and concepts.
+                                    I use a lot of digital tools like Krita, GIMP, etc.
+                                    I also love to draw on paper, but I don't do that much anymore.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="hobby-card" data-hobby="music">
+                            <div class="hobby-icon">🎵</div>
+                            <h4>Music</h4>
+                            <div class="hobby-details">
+                                <p>I used to play a lot on my keyboard(have done exams till grade 8), but not really anymore
+                                    As for music - its quite obscure and niche - Electronic, breakcore, J pop, beatbox and video game soundtracks.
+                                    I also love to listen to music while coding, it helps me focus and get into the zone.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Experience & Projects</h2>
+            <p class="section-subtitle">My journey through code and creativity</p>
+          </div>
+          <div class="timeline">
+      
+            <!-- 2025 Projects -->
+            <div class="timeline-item">
+              <div class="timeline-date">Apr-May, 2025</div>
+              <div class="timeline-content">
+                <h3><a href="https://github.com/DARSHAN-V-G/CSRC_Testing_verification" target="_blank">CSRC Verification Workflow System</a></h3>
+                <p class="timeline-category">Project – Duo</p>
+                <p>
+                  Designed and deployed a report verification system for the Centre for Sponsored Research and Consultancy (CSRC). Enabled staff-submitted reports to move through verification stages by HOD, CSRC faculty, and Dean. Hosted within college infra using Docker and NGINX.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">NGINX</span>
+                  <span class="tag">Workflow</span>
+                </div>
+              </div>
+            </div>
+
+
+      
+            <div class="timeline-item">
+              <div class="timeline-date">March 2025</div>
+              <div class="timeline-content">
+                <h3><a href="https://github.com/GitHub-Campus-Club-PSGCT/Codopoly-Kriya2025" target="_blank">Event Portal – Codopoly, Kriya 2025</a></h3>
+                <p class="timeline-category">Project – Club</p>
+                <p>
+                  Built an event portal where participants could register as teams and earn points by debugging, code auctions, and mini-games during Kriya 2025.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">Express</span>
+                  <span class="tag">MongoDB Atlas</span>
+                </div>
+              </div>
+            </div>
+
+                        <!-- 2025 Project -->
+<div class="timeline-item">
+    <div class="timeline-date">Feb 2025</div>
+    <div class="timeline-content">
+      <h3><a href="https://github.com/DARSHAN-V-G/DSD_HACKSPHERE_2K25" target="_blank">Hacksphere 2K25</a></h3>
+      <p class="timeline-category">Hackathon – Coding Club</p>
+      <p>
+        Developed a health platform backend integrating blockchain, chatbot analysis, QR-based doctor access, and wearable device metrics. Designed API routes for report security, wearable uploads, and real-time alerts.
+      </p>
+      <div class="timeline-tags">
+        <span class="tag">Node.js</span>
+        <span class="tag">REST API</span>
+        <span class="tag">Blockchain</span>
+        <span class="tag">QR Code</span>
+      </div>
+    </div>
+  </div>
+      
+            <!-- 2024 Experience -->
+            <div class="timeline-item">
+              <div class="timeline-date">Sept 2024 – Present</div>
+              <div class="timeline-content">
+                <h3><a href="https://github.com/Students-Union-PSGTech/Kriya_Bot" target="_blank">Students' Union – Web & App Dev Team member</a></h3>
+                <p class="timeline-category">Experience</p>
+                <p>
+                  Built and deployed a chatbot for Kriya 2025 using LangChain and RAG. Used Docker for deployment across internal college services.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">LangChain</span>
+                  <span class="tag">RAG</span>
+                  <span class="tag">Docker</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2024 Project -->
+            <div class="timeline-item">
+                <div class="timeline-date">Feb, 2024</div>
+                <div class="timeline-content">
+                  <h3><a href="https://github.com/Dhaarun-Abhimanyu/GitGud_1426_NexTech" target="_blank">College Management System</a></h3>
+                  <p class="timeline-category">Kriya 2024: Nextech Hackathon Winner</p>
+                  <p>
+                    Built a system for class booking, library book management, and a lost-and-found forum. Created during the GitGud_1426_NexTech 2 hackathon.
+                  </p>
+                  <div class="timeline-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Excel</span>
+                  </div>
+                </div>
+              </div>
+      
+            <div class="timeline-item">
+              <div class="timeline-date">Nov 2023 – Present</div>
+              <div class="timeline-content">
+                <h3>GitHub Campus Club – Member</h3>
+                <p class="timeline-category">Experience</p>
+                <p>
+                  • Conducted Codopoly - a fast paced bug hunting event and devloped a portal for it<br>
+                  • Conducted a backend workshop for Hack2Learn in Oct 2024.<br>
+                  • Participated in technical recruitment, evaluating candidates' technical knowledge and skills.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Workshops</span>
+                  <span class="tag">GitHub</span>
+                  <span class="tag">Recruitment</span>
+                </div>
+              </div>
+            </div>
+      
+            <!-- 2021 Project -->
+            <div class="timeline-item">
+              <div class="timeline-date">2021</div>
+              <div class="timeline-content">
+                <h3><a href="https://github.com/Dhaarun-Abhimanyu/My_discord_bot" target="_blank">Discord Chat Bot</a></h3>
+                <p class="timeline-category">Hobby Project – Solo</p>
+                <p>
+                  Developed a Discord bot that handles chat commands, music playback via LavaPlayer, and includes mini-games like Tic Tac Toe.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">JDA</span>
+                  <span class="tag">Eclipse</span>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">I'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        Whether you have a project in mind, want to collaborate, or just want to say hello, 
+                        I'm always open to interesting conversations and new opportunities.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>dhaarunabhimanyu@gmail.com</p>
+                            </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Dhaarun-Abhimanyu" class="social-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/dhaarun-abhimanyu/" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/xvgrdgqa" method="POST">
+                    <div class="form-group">
+                      <label>
+                        Name:
+                        <input type="text" name="name" required>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label>
+                        Email:
+                        <input type="email" name="email" required>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label>
+                        Subject:
+                        <input type="text" name="subject" required>
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label>
+                        Message:
+                        <textarea name="message" rows="5" required></textarea>
+                      </label>
+                    </div>
+                  
+                    <!-- Optional Honeypot (recommended) -->
+                    <input type="text" name="_gotcha" style="display: none;">
+                  
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                  </form>
+                  
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Dhaarun Abhimanyu S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
